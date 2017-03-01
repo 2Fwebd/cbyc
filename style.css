@@ -1,0 +1,184 @@
+/*
+Theme Name: C by C
+Description: Child theme for TwentyFifteen
+Author: ITEEM Project Team
+Template: twentyfifteen
+*/
+/*
+ * Fonts
+ */
+@font-face {
+    font-family: "Gibson";
+    src: url("../gibson-regular.woff") format('woff');
+}
+
+@font-face {
+    font-family: "Gibson";
+    src: url("../gibson-semibold.woff") format('woff');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Gibson";
+    src: url("../gibson-light.woff") format('woff');
+    font-weight: 300;
+}
+body, button, input, select, textarea, .page-title, .entry-footer{
+    font-family: "Gibson";
+    color: rgba(3, 47, 60, 0.8);
+}
+blockquote{
+    color: rgba(3, 47, 60, 0.4);
+    border-left: 4px solid rgba(3, 47, 60, 0.4);
+}
+/*
+ * Layout change
+ */
+body:before{
+    width: 20%;
+}
+body.admin-bar #sidebar{
+    top: 32px !important;
+}
+.site{
+    max-width: 100%;
+}
+.site-main{
+    padding: 0;
+}
+.site-link{
+    margin-left: 20%;
+    width: 80%;
+}
+.site-content {
+    margin-left: 20%;
+    width: 80%;
+}
+.hentry, .page-header, .page-content{
+    margin: 0;
+}
+.sidebar{
+    width: 20%;
+}
+.site-footer {
+    float: left;
+    margin: 0 0 0 20%;
+    padding: 0;
+    width: 80%;
+    z-index: 10;
+    position: relative;
+}
+/*
+ * Site Header
+ */
+.site-header{
+    margin: 0 0 40px 0;
+    padding: 0;
+}
+.custom-logo{
+    width: 100%;
+}
+.main-navigation{
+    margin: 0 14% 14%;
+}
+.main-navigation a {
+    color: #ffffff;
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    font-size: 1.2em;
+}
+.main-navigation a:hover{
+    opacity: .8;
+}
+.sidebar{
+    box-shadow: 2px 0px 30px rgba(0,0,0,.1);
+    z-index: 2;
+    position: fixed;
+    border-right: 1px solid #e0e0e0;
+    height: 100%;
+    overflow-y: scroll;
+    left: 0;
+    background: #032f3c;
+}
+.sidebar .widget input[type="search"]{
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: #FFF;
+    border-radius: 35px;
+    padding: 10px 20px;
+}
+.sidebar .widget input[type="search"]::-webkit-input-placeholder{
+    color: rgba(255,255,255, 1);
+}
+/*
+ * Language Switcher
+ */
+.pll-parent-menu-item{
+    margin-bottom: 10px;
+}
+.pll-parent-menu-item > a{
+    border: 2px solid rgba(255,255,255,1);
+    padding: 6px 16px;
+    font-size: 16px;
+    border-radius: 25px;
+}
+.pll-parent-menu-item .dropdown-toggle:after{
+    color: #ffffff;
+    left: -8px;
+}
+.pll-parent-menu-item ul.sub-menu.toggled-on{
+    margin: -20px 0 0 0;
+    padding-top: 20px;
+    font-size: 12px;
+    border-left: 2px solid rgba(255,255,255,.2);
+    border-bottom: 2px solid rgba(255,255,255,.2);
+    border-right: 2px solid rgba(255,255,255,.2);
+    border-radius: 0 0 25px 25px;
+}
+.pll-parent-menu-item ul.sub-menu.toggled-on li a{
+    border-bottom: 0;
+    padding: 5px 20px;
+}
+/*
+ * Facebook Module
+ */
+div.fb_iframe_widget ._1drm._1ds3 ._1drn{display: none !important;}
+/*
+ * Content
+ */
+h1.page-title, .entry-title, .entry-title a{
+    font-weight: 600;
+    border-right: 0;
+    font-size: 3em;
+    color: #032f3c;
+}
+h2.entry-title a{
+    font-weight: 600;
+    border-right: 0;
+    font-size: 1em;
+    color: #032f3c;
+}
+.page-header {
+    border-left: 0 !important;
+}
+.hentry + .hentry, .page-header + .hentry, .page-header + .page-content {
+    margin-top: 0;
+}
+.comments-area{
+    margin: 0;
+}
+footer.entry-footer{
+    background: -webkit-linear-gradient(to left, #ed1a3b, #fc0077);
+    color: rgba(255,255,255,.8);
+}
+footer.entry-footer a{
+    color: #ffffff;
+}
+footer.entry-footer a:hover{
+    opacity: .8;
+}
+/*
+ * Forms
+ */
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea{
+    border-right: 25px;
+}
