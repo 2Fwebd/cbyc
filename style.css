@@ -23,13 +23,16 @@ Template: twentyfifteen
     src: url("fonts/gibson-light.woff") format('woff');
     font-weight: 300;
 }
-body, button, input, select, textarea, .page-title, .entry-footer{
+.comment-form label, .post-navigation .meta-nav{
+    font-family: "Gibson";
+}
+/*
+ * Headlines
+ */
+body, button, input, select, textarea, .entry-footer,
+.page-title, .comments-title, .comment-reply-title, .post-navigation .post-title{
     font-family: "Gibson";
     color: rgba(3, 47, 60, 0.8);
-}
-blockquote{
-    color: rgba(3, 47, 60, 0.4);
-    border-left: 4px solid rgba(3, 47, 60, 0.4);
 }
 /*
  * Layout change
@@ -39,6 +42,10 @@ body:before{
 }
 body.admin-bar #sidebar{
     top: 32px !important;
+}
+blockquote{
+    color: rgba(3, 47, 60, 0.4);
+    border-left: 4px solid rgba(3, 47, 60, 0.4);
 }
 .site{
     max-width: 100%;
@@ -54,7 +61,7 @@ body.admin-bar #sidebar{
     margin-left: 20%;
     width: 80%;
 }
-.hentry, .page-header, .page-content{
+.hentry, .page-header, .page-content, .post-navigation{
     margin: 0;
 }
 .sidebar{
@@ -128,6 +135,12 @@ a:hover{ transition: all 0.3s ease-in-out; }
     font-size: 16px;
     border-radius: 25px;
 }
+.pll-parent-menu-item > a:hover{
+    padding-left: 16px;
+}
+.pll-parent-menu-item button.dropdown-toggle{
+    background: transparent;
+}
 .pll-parent-menu-item .dropdown-toggle:after{
     color: #ffffff;
     left: -8px;
@@ -173,6 +186,9 @@ h2.entry-title a{
 .comments-area{
     margin: 0;
 }
+.comment-form label{
+    margin-bottom: 15px;
+}
 footer.entry-footer{
     background: linear-gradient(to left, #ed1a3b, #fc0077);
     color: rgba(255,255,255,.8);
@@ -188,4 +204,8 @@ footer.entry-footer a:hover{
  */
 input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea{
     border-right: 25px;
+}
+button, input[type="button"], input[type="reset"], input[type="submit"]{
+    background: linear-gradient(to left, #ed1a3b, #fc0077);
+    color: rgba(255,255,255,1);
 }
