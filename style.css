@@ -9,18 +9,18 @@ Template: twentyfifteen
  */
 @font-face {
     font-family: "Gibson";
-    src: url("../gibson-regular.woff") format('woff');
+    src: url("fonts/gibson-regular.woff") format('woff');
 }
 
 @font-face {
     font-family: "Gibson";
-    src: url("../gibson-semibold.woff") format('woff');
+    src: url("fonts/gibson-semibold.woff") format('woff');
     font-weight: 600;
 }
 
 @font-face {
     font-family: "Gibson";
-    src: url("../gibson-light.woff") format('woff');
+    src: url("fonts/gibson-light.woff") format('woff');
     font-weight: 300;
 }
 body, button, input, select, textarea, .page-title, .entry-footer{
@@ -69,6 +69,11 @@ body.admin-bar #sidebar{
     position: relative;
 }
 /*
+ * Animations
+ */
+a{ transition: all 0.4s ease-out; }
+a:hover{ transition: all 0.3s ease-in-out; }
+/*
  * Site Header
  */
 .site-header{
@@ -85,9 +90,11 @@ body.admin-bar #sidebar{
     color: #ffffff;
     border-bottom: 2px solid rgba(255, 255, 255, .2);
     font-size: 1.2em;
+    padding-left: 0px;
 }
 .main-navigation a:hover{
     opacity: .8;
+    padding-left: 10px;
 }
 .sidebar{
     box-shadow: 2px 0px 30px rgba(0,0,0,.1);
@@ -167,7 +174,7 @@ h2.entry-title a{
     margin: 0;
 }
 footer.entry-footer{
-    background: -webkit-linear-gradient(to left, #ed1a3b, #fc0077);
+    background: linear-gradient(to left, #ed1a3b, #fc0077);
     color: rgba(255,255,255,.8);
 }
 footer.entry-footer a{

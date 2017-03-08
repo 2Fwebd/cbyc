@@ -31,7 +31,7 @@ Class CbyC
         ?>
 
         <div class="site-branding">
-            <a href="<?php site_url(); ?>">
+            <a href="<?php echo site_url(); ?>">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.jpg" alt="<?php _e('Logo CbyC', 'cbyc'); ?>">
             </a>
         </div>
