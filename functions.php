@@ -12,15 +12,17 @@ Class CbyC
      */
     public function __construct()
     {
-        add_action( 'wp_enqueue_scripts', array($this, 'enqueue_styles') );
+        add_action( 'wp_enqueue_scripts', array($this, 'enqueue_assets') );
         add_filter( 'comments_open',  array($this, 'deactivate_comment') );
     }
 
     /**
      * Enqueue Stylesheet
      */
-    public function enqueue_styles() {
+    public function enqueue_assets() {
+
         wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+        wp_enqueue_script( 'customScrollbar', get_template_directory_uri() . '/js/customScrollbar.js', array ( 'jquery' ), 1.1, true);
 
     }
 
