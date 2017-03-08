@@ -22,7 +22,7 @@ Class CbyC
     public function enqueue_assets() {
 
         wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-        wp_enqueue_script( 'customScrollbar', get_template_directory_uri() . '/js/customScrollbar.js', array ( 'jquery' ), 1.1, true);
+        wp_enqueue_script( 'customScrollbar', get_stylesheet_directory_uri() . '/js/customScrollbar.js', array ( 'jquery' ), 1.1, true);
 
     }
 
