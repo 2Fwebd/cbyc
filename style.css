@@ -200,6 +200,17 @@ footer.entry-footer a:hover{
     opacity: .8;
 }
 /*
+ * Comments
+ * !important to overwrite the inline style
+ */
+#wpdevar_comment_1 > span{
+    font-family: "Gibson" !important;
+    color: rgba(3, 47, 60, 0.8) !important;
+    padding-left: 0 !important;
+    font-size: 28px !important;
+    font-weight: bold;
+}
+/*
  * Forms
  */
 input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea{
