@@ -199,6 +199,14 @@ footer.entry-footer a{
 footer.entry-footer a:hover{
     opacity: .8;
 }
+.post-thumbnail{
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.post-thumbnail img{
+    width: 100%;
+}
 /*
  * Comments
  * !important to overwrite the inline style
@@ -219,6 +227,37 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 button, input[type="button"], input[type="reset"], input[type="submit"]{
     background: linear-gradient(to left, #ed1a3b, #fc0077);
     color: rgba(255,255,255,1);
+}
+
+/*
+ * Responsive
+ */
+@media(max-width: 1200px) {
+    .site-content{
+        margin-left: 30%;
+        width: 70%;
+    }
+    #sidebar{
+        width: 30%;
+    }
+}
+@media(max-width: 955px) {
+    .site-content {
+        margin-left: 0;
+        width: 100%;
+    }
+    #sidebar{
+        height: initial;
+        width: 100%;
+    }
+    .fb_iframe_widget_fluid{
+        display: none;
+    }
+    .site-footer{
+        margin: 0;
+        width: 100%;
+        padding: 20px;
+    }
 }
 
 /* perfect-scrollbar v0.6.16 */
