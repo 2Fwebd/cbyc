@@ -206,6 +206,9 @@ footer.entry-footer a:hover{
 }
 .post-thumbnail img{
     width: 100%;
+    position: absolute;
+    bottom: -30%;
+
 }
 /*
  * Comments
