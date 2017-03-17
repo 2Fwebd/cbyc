@@ -249,12 +249,37 @@ button, input[type="button"], input[type="reset"], input[type="submit"]{
         margin-left: 0;
         width: 100%;
     }
+    #secondary.secondary{
+        background: rgba(3, 47, 60, 0.8);
+        overflow: scroll;
+        max-height: 100vh;
+        padding-bottom: 40px;
+        z-index: 1000;
+    }
+    .site-header{
+        margin: 0;
+        padding: 0;
+        background: rgba(255,255,255,.7);
+    }
+    .site-branding{
+        padding-right: 0;
+        width: 100px;
+    }
+    .secondary-toggle{
+        height: 100px;
+    }
+    .secondary-toggle:before{
+        line-height: 100px;
+    }
+    .sidebar{
+        background: transparent;
+    }
     #sidebar{
         height: initial;
         width: 100%;
     }
-    .fb_iframe_widget_fluid{
-        display: none;
+    .fb_iframe_widget{
+        display: none !important;
     }
     .site-footer{
         margin: 0;
