@@ -4,5 +4,6 @@
 
 
 jQuery(function() {
+    //jQuery('html').perfectScrollbar();
     jQuery('#sidebar').perfectScrollbar();
 });
