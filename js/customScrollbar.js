@@ -5,5 +5,5 @@
 
 jQuery(function() {
     //jQuery('html').perfectScrollbar();
-    jQuery('#sidebar, #secondary').perfectScrollbar();
+    jQuery('#sidebar, .main-navigation').perfectScrollbar();
 });
